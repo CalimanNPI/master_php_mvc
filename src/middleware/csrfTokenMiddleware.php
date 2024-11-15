@@ -1,8 +1,8 @@
 <?php
 
-namespace Cdc\Gym\middleware;
+namespace Web\Gym\middleware;
 
-use Cdc\Gym\lib\Session;
+use Web\Gym\lib\Session;
 
 class CsrfTokenMiddleware
 {

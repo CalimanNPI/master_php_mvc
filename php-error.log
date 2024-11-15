@@ -1,0 +1,9 @@
+[15-Nov-2024 23:04:11 UTC] PHP Fatal error:  Uncaught Error: Class "Cdc\Gym\model\GymModel" not found in C:\inetpub\wwwroot\gym\src\lib\controller.php:26
+Stack trace:
+#0 C:\inetpub\wwwroot\gym\src\controller\gymcontroller.php(19): Web\Gym\lib\Controller->loadModel()
+#1 C:\inetpub\wwwroot\gym\vendor\bramus\router\src\Bramus\Router\Router.php(480): Web\Gym\controller\GymController->__construct()
+#2 C:\inetpub\wwwroot\gym\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke()
+#3 C:\inetpub\wwwroot\gym\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404()
+#4 C:\inetpub\wwwroot\gym\index.php(40): Bramus\Router\Router->run()
+#5 {main}
+  thrown in C:\inetpub\wwwroot\gym\src\lib\controller.php on line 26

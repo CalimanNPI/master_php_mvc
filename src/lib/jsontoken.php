@@ -1,6 +1,6 @@
 <?php
 
-namespace Cdc\Gym\lib;
+namespace Web\Gym\lib;
 
 class JsonToken
 {

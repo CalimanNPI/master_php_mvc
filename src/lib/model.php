@@ -1,8 +1,8 @@
 <?php
 
-namespace Cdc\Gym\lib;
+namespace Web\Gym\lib;
 
-use Cdc\Gym\lib\Database;
+use Web\Gym\lib\Database;
 
 class Model
 {

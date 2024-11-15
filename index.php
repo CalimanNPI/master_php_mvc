@@ -15,8 +15,8 @@ $dotenv->load();
 // Iniciamos una sesión y generamos el CSRF token
 require_once __DIR__ . "/src/lib/session.php";
 require_once __DIR__ . "/src/lib/csrf.php";
-$session = new \CDC\Gym\lib\Session();
-$csrf = new \CDC\Gym\lib\CSRF();
+$session = new \Web\Gym\lib\Session();
+$csrf = new \Web\Gym\lib\CSRF();
 $session->init();
 $csrf->generateToken();
 
@@ -29,11 +29,11 @@ define('BASE_URL', $base_url);
 
 // Aquí se cargan las rutas de la aplicación
 $router = new Bramus\Router\Router();
-$router->setNamespace('\Cdc\Gym\controller');
-$router->set404('HomeController@notFount');
+$router->setNamespace('\Web\Gym\controller');
+$router->set404('GymController@erro_404');
 
-$backendRouter = new Cdc\Gym\routes\BackendRoutes();
-$frontendRoutes = new Cdc\Gym\routes\FrontendRoutes();
+$backendRouter = new Web\Gym\routes\BackendRoutes();
+$frontendRoutes = new Web\Gym\routes\FrontendRoutes();
 $backendRouter->loadRoutes($router);
 $frontendRoutes->loadRoutes($router);
 

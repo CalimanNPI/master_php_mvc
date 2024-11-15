@@ -1,17 +1,15 @@
 {
-    "name": "cdc/gym",
+    "name": "web/gym",
     "autoload": {
         "psr-4": {
-            "Cdc\\Gym\\": "src/"
+            "Web\\Gym\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "cdcac"
+            "name": "CalimanNPI",
+            "email": "61203396+CalimanNPI@users.noreply.github.com"
         }
     ],
-    "require": {
-        "vlucas/phpdotenv": "^5.6",
-        "bramus/router": "~1.6"
-    }
+    "require": {}
 }
